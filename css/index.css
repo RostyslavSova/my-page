@@ -1,0 +1,158 @@
+
+a{
+    text-decoration: none;
+}
+h1{
+     color:#a68400;
+    font-family: Lobster, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+
+h2 {
+    color: #355723;
+    background-color: #a68400;
+    font-size: 20px;
+    font-family: Lobster, serif;
+    
+}
+
+nav{
+    
+    background-color: #ffe373;
+    border:2px solid #a68400;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows:500px auto 100px;
+    grid-template-areas:". h ."
+                        ". m ."
+                        ". f .";
+}
+header{
+    grid-area: h;
+    color:#a68400;
+    background-color: #FFDE40;
+}
+main{
+    grid-area: m;
+}
+
+footer{
+    grid-area: f;
+    color: #ffffff;
+    background-color: #a68400;
+    font-size: 30px;
+    font-family: Lobster , serif;
+}
+
+iframe {
+    border: 0;
+    width:auto;
+}
+label{
+    color: #355723;
+    font-size: 20px;
+}
+
+label:last-of-type{
+    font-size: 12px;
+    color: #355723;
+}
+
+nav a{
+    color:#a68400;
+    font-size: 20px;
+    font-family: Lobster, sans-serif;
+}
+
+section, div{
+    background-color: #ffe373;
+}
+#contacts, #social-links{
+    background-color: #FFDE40;
+}
+
+
+#edu{
+    color: #355723;;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Bitter, serif;
+}
+
+
+.carousel{
+    max-width:100%;
+    max-height: 100%;
+}
+
+#html5-logo, #js-logo, #php5-logo,#css3-logo{
+    width:auto;
+}
+
+.icon{
+    width: 40px;
+}
+
+.social-links-img{
+    width: 80px;
+}
+
+.portfolio-image, .politecnic-logo{
+    width:200px;
+    height: 200px;
+}
+.header-img-container{
+    width: 150px;
+}
+.skills-logo-container {
+    width:100px;
+    height: 100px
+}
+
+#contacts > p, header figcaption,  h3{
+    color:#a68400;
+    font-family: Bitter, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    
+}
+
+#about-me p {
+    color: #355723;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Bitter, serif;
+}
+
+#contact-form label{
+    font-family: Bitter,  serif;
+    font-weight: bold;
+}
+
+#portfolio figcaption {
+    color:#ffffff;
+    background-color: #629c44;
+    width: auto;
+    font-family: Bitter, sans-serif;
+}
+
+#contact-form > input:last-of-type{
+    color: #ffffff;
+    background-color: #629c44;
+    
+}
+.container-for-skills{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-img-container > img, .skills-logo-container > img, .carousel > img, .politecnic-logo>img {
+    width:100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
