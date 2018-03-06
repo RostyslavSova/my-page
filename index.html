@@ -15,10 +15,10 @@
 <body>
     <div class="nav-wrapper">
        <nav class="page-nav">
-            <a href="#about-me">About me | </a>
-            <a href="#skills">Skills | </a>
-            <a href="#portfolio">Portfolio | </a>
-            <a href="#contact-form">Send me a message | </a>
+            <a href="#about-me">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact-form">Send me a message</a>
             <a href="#map">Find me here</a>
         </nav>
     </div>
@@ -29,13 +29,13 @@
             <div class="header-img-container"><img id="header-photo" src="images/photo/rostyslav-sova.png" alt="Rostyslav Sova"></div>
             <figcaption>Rostyslav Sova</figcaption>
         </figure>
-        <section id="contacts">
+        <section class="contacts">
             <h3>Contact:</h3>
             <p><img class="icon" src="images/icons/message-icon.svg" alt="message icon"><br>sova.rostislav@gmail.com</p>
             <p><img class="icon" src="images/icons/phone-icon.svg" alt="phone icon"><br>+380956625261</p>
             <p><img class="icon" src="images/icons/location-icon.svg" alt="location icon"><br>Gorodok, Ukraine</p>
         </section>
-        <section id="social-links">
+        <section class="social-links">
             <h3>Follow me:</h3>
             <a href="https://www.facebook.com/sova.rostyslav">
                     <img class="social-links-img" src="images/social/facebook.svg" alt="facebook logo">
@@ -87,6 +87,7 @@
         
         <section id="portfolio">
             <h2>Portfolio:</h2>
+            <div class="portfolio-wrapper">
             <figure>
                 <img class="portfolio-image" src="images/photo/under-construction.gif" alt="empty project image">
                 <figcaption>Project name</figcaption>
@@ -103,6 +104,7 @@
                 <img class="portfolio-image" src="images/photo/under-construction.gif" alt="empty project image">
                 <figcaption>Project name</figcaption>
             </figure>
+            </div>
         </section>
         
         <section id="contact-form-container">
@@ -130,6 +132,12 @@
         <p>© All rights reserved. 2018</p>
     </footer>
     </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
