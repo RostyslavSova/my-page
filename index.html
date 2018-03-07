@@ -10,17 +10,62 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-large.css" media="(min-width:560px)" />
+    <link rel="stylesheet" href="css/index-small.css" media="(max-width:559px)"/>
     <title>Rostyslav Sova</title>
 </head>
 
 <body>
     <div class="page-wrapper">
+        <div class="nav-wrapper-small">
+            <nav>
+                <input type="checkbox" class="trigger" id="mainNavButton">
+                <label for="mainNavButton"> Menu
+                  <div class="burger">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                  </div>
+                </label>
+                <ul>
+                    <li>Page navigation:</li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact-form-container">Send me a message</a></li>
+                    <li><a href="#map">Find me here</a></li>
+                </ul>
+
+                <ul>
+                    <li>Follow me:</li>
+                    <li>
+                        <a href="https://www.facebook.com/sova.rostyslav">
+                        <img class="social-links-img" src="images/social/facebook.svg" alt="facebook logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RostyslavSova">
+                        <img class="social-links-img" src="images/social/git.svg" alt="github logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/108940684357442151840">
+                        <img class="social-links-img" src="images/social/google-plus.svg" alt="google plus logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/rostyslav-sova">
+                        <img class="social-links-img" src="images/social/linkedin.svg" alt="linkedin logo">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     <div class="nav-wrapper">
        <nav class="page-nav">
             <a href="#about-me">About me</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact-form">Send me a message</a>
+            <a href="#contact-form-container">Send me a message</a>
             <a href="#map">Find me here</a>
         </nav>
     </div>
@@ -33,9 +78,9 @@
         </figure>
         <section class="contacts">
             <h3>Contact:</h3>
-            <p><img class="icon" src="images/icons/message-icon.svg" alt="message icon"><br>sova.rostislav@gmail.com</p>
-            <p><img class="icon" src="images/icons/phone-icon.svg" alt="phone icon"><br>+380956625261</p>
-            <p><img class="icon" src="images/icons/location-icon.svg" alt="location icon"><br>Gorodok, Ukraine</p>
+            <p><img class="icon" src="images/icons/message-icon.svg" alt="message icon"> sova.rostislav@gmail.com</p>
+            <p><img class="icon" src="images/icons/phone-icon.svg" alt="phone icon"> +380956625261</p>
+            <p><img class="icon" src="images/icons/location-icon.svg" alt="location icon"> Gorodok, Ukraine</p>
         </section>
         <section class="social-links">
             <h3>Follow me:</h3>
@@ -112,14 +157,16 @@
         <section id="contact-form-container">
             <h2>Send me a message</h2>
             <form id="contact-form" action="https://formspree.io/sova.rostislav@gmail.com" method="POST">
-                <label>Your name: <input type="text" name="visitor-name"></label>
-                <br>
-                <label>Your email: <input type="email" name="visitor-email"></label>
-                <br>
-                <label>Your message:  <textarea name="visitor-message"></textarea></label>
-                <br>
-                <label id="label-for-checkbox"><input type="checkbox" name="visitor-is-employer"> Are you an employer?</label>
-                <br>
+                <label for="vn">Your name: </label>
+                <input type="text" name="visitor-name" placeholder="Your name" id="vn">
+                <label for="ve" >Your email:</label> 
+                <input type="email" id="ve" placeholder="Your email" name="visitor-email">
+                <label for="vm">Your message:</label> 
+                <textarea  id="vm" name="visitor-message" placeholder="Your message"></textarea>
+                <label for="vie">
+                    <input type="checkbox" id="vie" name="visitor-is-employer"> 
+                    Are you an employer?
+                </label>
                 <input type="submit" value="Send">
             </form>
         </section>

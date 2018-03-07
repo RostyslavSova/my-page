@@ -1,3 +1,6 @@
+.nav-wrapper-small{
+    display: none;
+}
 h2 {
     font-size: 24px;
 }
@@ -32,11 +35,14 @@ footer {
 }
 
 label {
-    font-size: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content:flex-start;
 }
 
 label:last-of-type {
-    font-size: 12px;
+    font-size: 16px;
+    align-items: center;
 }
 
 figure {
@@ -50,7 +56,16 @@ header>figure {
     grid-row: 2/3;
     margin: auto;
 }
-
+#map>h2{
+    margin-bottom: 0;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    
+}
 
 nav>a {
     font-size: 20px;
@@ -154,7 +169,7 @@ body {
 
 .education {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 10% 90%;
 }
 
@@ -164,14 +179,13 @@ body {
 }
 
 .education>.politecnic-logo {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .education>ul {
     grid-column: 2/3;
     grid-rows: 2/3;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .social-links {
@@ -217,8 +231,28 @@ h3 {
     font-size: 16px;
 }
 
+#contact-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows:repeat(20%,5);
+  padding: 20px;
+  margin: auto;
+}
+   textarea {
+    height: 100px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+   } 
 #contact-form>input:last-of-type {
-    color: #ffffff;
-    background-color: #629c44;
+    margin-left: 49% ;
+    background-color: #629c44; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:50%;
 
 }
