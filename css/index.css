@@ -1,6 +1,7 @@
 a {
     text-decoration: none;
 }
+
 .navbar{
     position: sticky;
     top: 0px;
@@ -10,13 +11,16 @@ a {
     background-color:rgba(0, 0, 0, 0);
     margin-bottom: 10px;
 }
+
 .collapse,.navbar-toggler, nav{
     background-color: rgba(255, 222, 64, 0.9);
     
 }
-.active{
+
+.active, a:hover{
     font-weight: bold;
 }
+
 h1,
 h2,
 footer {
@@ -60,31 +64,30 @@ footer {
     margin-bottom: -20px;
 
 }
-footer>p{
 
+footer > p {
     margin: 0;
 }
+
 iframe {
     border: 0;
     width: auto;
 }
 
-main>section {
+main > section {
     background-color: rgba(255, 227, 115, 0.8);
      margin-bottom: 20px;
 }
+
 #about-me{
     margin-top: 20px;
 }
-header{
 
-}
 #edu, #about-me p, label {
     color: #355723;
     font-weight: bold;
     font-family: Bitter, serif;
 }
-
 
 .carousel-item {
     width:100%;
@@ -126,3 +129,32 @@ header>figure>figcaption {
     object-fit: cover;
 }
 
+.modal-content {
+    display: flex;
+    justify-content: center;
+    font-family: "Lobster";
+    height: 250px;
+    font-size: 25px;
+     color: #ffffff;
+    background-color: #a68400;
+}
+
+.modal-header {
+    border-bottom: 1px solid #a68400;
+}
+
+.modal-body p {
+    display: flex;
+    justify-content: space-around;
+    color: #ebebeb;
+}
+
+.modal-footer {
+    border: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-secondary{
+    background-color: grey;
+}

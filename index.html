@@ -174,18 +174,18 @@
 
                 <section id="contact-form-container">
                     <h2>Send me a message</h2>
-                    <form id="contact-form" action="https://formspree.io/sova.rostislav@gmail.com" method="POST">
+                    <form id="contact-form" method="POST" action="https://tranquil-sierra-86540.herokuapp.com/sova.rostislav@gmail.com">
                         <label for="vn">Your name: </label>
-                        <input type="text" name="visitor-name" placeholder="Your name" id="vn">
+                        <input type="text" id="vn" name="visitor_name" placeholder="Your name">
                         <label for="ve">Your email:</label>
-                        <input type="email" id="ve" placeholder="Your email" name="visitor-email">
+                        <input type="email"  id="ve" placeholder="Your email" name="visitor_email">
                         <label for="vm">Your message:</label>
-                        <textarea id="vm" name="visitor-message" placeholder="Your message"></textarea>
+                        <textarea  name="visitor_msg" id="vm" placeholder="Your message"></textarea>
                         <label for="vie">
-                    <input type="checkbox" id="vie" name="visitor-is-employer"> 
+                    <input type="checkbox" id="vie"  name="visitor_is_employer"> 
                     Are you an employer?
                 </label>
-                        <input type="submit" value="Send">
+                        <input type="submit"  data-toggle="modal" data-target="#thank-u" value="Send">
                     </form>
                 </section>
 
@@ -201,6 +201,26 @@
             </footer>
         </div>
     </div>
+    
+    
+       <div class="modal fade" id="thank-u" tabindex="-1" role="dialog" aria-labelledby="thank-uTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for contacting me!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

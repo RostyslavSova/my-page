@@ -1,12 +1,30 @@
-
-h2 {
-    font-size: 24px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     grid-column: 1/3;
     grid-row: 1/2;
     font-size: 22px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.page-wrapper {
+    max-width: 1980px;
+}
+
+header > figure {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: auto;
 }
 
 header {
@@ -17,111 +35,36 @@ header {
     grid-template-rows: 10% auto 15%;
 }
 
-main {
-    min-width: 530px;
-    grid-area: m;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 530px;
-    grid-area: f;
-    font-size: 24px;
-    margin-bottom: -20px;
-}
-
-label {
-    font-size: 24px;
-    display: flex;
-    justify-content:flex-start;
-}
-
-label:last-of-type {
-    font-size: 16px;
-    align-items: center;
-}
-
-
-header>figure {
-      display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: auto;
-}
-#map>h2{
-    margin-bottom: 0;
-}
-iframe{
-    width: 100%;
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    
-}
-
-main>section {
-    padding-bottom: 10px;
-}
-
-header>figure>figcaption {
+.header-img-container {
     width: 250px;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+header > figure > figcaption {
+    width: 250px;
 }
-.page-wrapper{
-    max-width: 1980px;
-}
-.main-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 500px auto 50px;
-    grid-template-areas: ". h ." ". m ." "f f f";
-}
-.collapse {
-    display: flex;
-    justify-content: space-around;
-}
-li.dropdown{
+
+.social-links > h3{
     display: none;
 }
-.icon {
-    width: 30px;
+
+.social-links {
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    justify-content: space-around;
+    align-items: center;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #a68400;
+
 }
 
 .social-links-img {
     width: 40px;
     background-color: white;
 }
-
-.portfolio-image,
-.politecnic-logo {
-    width: 200px;
-    height: 200px;
-
-}
-
-.header-img-container {
-    width: 250px;
-}
-
-
-.skills-logo-container {
-    width: 100px;
-    height: 100px;
-    padding-bottom: 10px;
-}
-
-.container-for-skills {
-    display: flex;
-    justify-content: space-around;
+.icon {
+    width: 30px;
 }
 
 .contacts {
@@ -134,11 +77,45 @@ li.dropdown{
     margin: auto;
 }
 
+.contacts > p,
+header figcaption,
+h3 {
+    font-size: 20px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-around;
+}
+
+li.dropdown {
+    display: none;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 500px auto 50px;
+    grid-template-areas: ". h ." ". m ." "f f f";
+}
+
+main {
+    min-width: 530px;
+    grid-area: m;
+}
+
+main > section {
+    padding-bottom: 10px;
+}
+
 .portfolio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
 
+.portfolio-wrapper > figure {
+    margin: auto;
 }
 
 .education {
@@ -156,38 +133,10 @@ li.dropdown{
     margin-left: 20px;
 }
 
-.education>ul {
+.education > ul {
     grid-column: 2/3;
     grid-rows: 2/3;
     padding-right: 10px;
-}
-.social-links>h3{
-    display: none;
-}
-.social-links {
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 3/4;
-    justify-content: space-around;
-    align-items: center;
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-top-color: #a68400;
-
-}
-
-
-.portfolio-wrapper>figure {
-    margin: auto;
-
-}
-
-
-
-.contacts>p,
-header figcaption,
-h3 {
-    font-size: 20px;
 }
 
 #edu {
@@ -203,32 +152,16 @@ h3 {
     font-size: 16px;
 }
 
-#contact-form{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-rows:repeat(20%,5);
-  padding: 20px;
-  margin: auto;
-}
-   textarea {
-    height: 100px; /* Высота поля в пикселах */
-    resize: none; /* Запрещаем изменять размер */
-   } 
-#contact-form>input:last-of-type {
-    margin-left: 49% ;
-    background-color: #629c44; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width:50%;
-
+.skills-logo-container {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
 }
 
+.container-for-skills {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /* Container needed to position the overlay. Adjust the width as needed */
@@ -239,7 +172,7 @@ h3 {
 }
 
 /* Make the image to responsive */
-.portfolio-wrapper figure>img {
+.portfolio-wrapper figure > img {
   display: block;
   width: 100%;
   height: auto;
@@ -254,16 +187,90 @@ h3 {
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
   width: 100%;
+  height: 20%;
   transition: .5s ease;
   opacity:0;
   color: white;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 16px;
+  padding: auto;
   text-align: center;
   margin-bottom: 10px;
+  
 }
 
 /* When you mouse over the container, fade in the overlay title */
 .portfolio-wrapper figure:hover figcaption {
   opacity: 1;
 }
+
+.portfolio-image,
+.politecnic-logo {
+    width: 200px;
+    height: 200px;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows:repeat(20%,5);
+  padding: 20px;
+}
+
+textarea {
+    height: 100px;
+    resize: none; 
+}
+
+#contact-form input:nth-last-child(1){
+    width:24px;
+}
+
+#contact-form>input:last-of-type {
+    margin-left: 49% ;
+    background-color: #629c44; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:50%;
+}
+
+label {
+    font-size: 24px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+label:last-of-type {
+    font-size: 20px;
+    align-items: center;
+}
+
+#map > h2 {
+    margin-bottom: 0;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 530px;
+    grid-area: f;
+    font-size: 24px;
+    margin-bottom: -20px;
+}
+
+
