@@ -44,13 +44,11 @@ label:last-of-type {
     align-items: center;
 }
 
-figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 header>figure {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-column: 1/2;
     grid-row: 2/3;
     margin: auto;
@@ -172,7 +170,6 @@ li.dropdown{
     grid-row: 3/4;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     border-top-width: 2px;
     border-top-style: solid;
     border-top-color: #a68400;
@@ -182,13 +179,10 @@ li.dropdown{
 
 .portfolio-wrapper>figure {
     margin: auto;
-    padding: 5px;
+
 }
 
-.portfolio-wrapper>figure>figcaption {
-    display: inline-block;
-    width: 200px;
-}
+
 
 .contacts>p,
 header figcaption,
@@ -233,4 +227,43 @@ h3 {
     font-size: 16px;
     width:50%;
 
+}
+
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.portfolio-wrapper figure {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.portfolio-wrapper figure>img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.portfolio-wrapper figure>figcaption {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.portfolio-wrapper figure:hover figcaption {
+  opacity: 1;
 }

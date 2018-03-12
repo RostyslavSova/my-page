@@ -7,9 +7,16 @@ a {
     width: 100%;
     padding:0;
     z-index: 400;
+    background-color:rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+}
+.collapse,.navbar-toggler, nav{
+    background-color: rgba(255, 222, 64, 0.9);
     
 }
-
+.active{
+    font-weight: bold;
+}
 h1,
 h2,
 footer {
@@ -20,6 +27,7 @@ footer {
 h1 {
     color: #a68400;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 h2 {
@@ -52,7 +60,10 @@ footer {
     margin-bottom: -20px;
 
 }
+footer>p{
 
+    margin: 0;
+}
 iframe {
     border: 0;
     width: auto;
@@ -62,11 +73,11 @@ main>section {
     background-color: rgba(255, 227, 115, 0.8);
      margin-bottom: 20px;
 }
-.about-me{
+#about-me{
     margin-top: 20px;
 }
 header{
-   margin-bottom: 20px;
+
 }
 #edu, #about-me p, label {
     color: #355723;
