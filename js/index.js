@@ -5,9 +5,9 @@ $(document).ready(function(){
         let $target = $(target);
         let scroll;
         if($(window).scrollTop()==0){
-            scroll =  ($target.offset().top) - 10
+            scroll =  ($target.offset().top) - 70
         }else{
-            scroll =  ($target.offset().top) - 10
+            scroll =  ($target.offset().top) - 70
         }
         $('html, body').stop().animate({
             'scrollTop': scroll
