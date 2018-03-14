@@ -2,7 +2,11 @@ a {
     text-decoration: none;
 }
 
-.navbar{
+.navbar a {
+    font-weight: bold;
+}
+
+.navbar {
     position: sticky;
     top: 0px;
     width: 100%;
@@ -12,13 +16,15 @@ a {
     margin-bottom: 10px;
 }
 
-.collapse,.navbar-toggler, nav{
+.collapse,
+.navbar-toggler,
+nav {
     background-color: rgba(255, 222, 64, 0.9);
-    
 }
 
-.active, a:hover{
-    font-weight: bold;
+.active,
+a:hover {
+    color: green;
 }
 
 h1,
@@ -52,7 +58,6 @@ header {
     background-color: rgba(255, 222, 64, 0.9);
 }
 
-
 footer {
     color: #ffffff;
     background-color: #a68400;
@@ -62,7 +67,6 @@ footer {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: -20px;
-
 }
 
 footer > p {
@@ -79,11 +83,13 @@ main > section {
      margin-bottom: 20px;
 }
 
-#about-me{
+#about-me {
     margin-top: 20px;
 }
 
-#edu, #about-me p, label {
+#edu,
+#about-me p,
+label {
     color: #355723;
     font-weight: bold;
     font-family: Bitter, serif;
@@ -94,7 +100,6 @@ main > section {
      z-index: 0;
 }
 
-
 #html5-logo,
 #js-logo,
 #php5-logo,
@@ -102,8 +107,7 @@ main > section {
     width: auto;
 }
 
-
-.contacts>p,
+.contacts > p,
 header figcaption,
 h3 {
     color: #a68400;
@@ -111,19 +115,19 @@ h3 {
     font-weight: bold;
 }
 
-header>figure>figcaption {
+header > figure > figcaption {
     text-align: center;
 }
 
-.portfolio-wrapper>figure>figcaption,
-#contact-form>input:last-of-type {
+.portfolio-wrapper > figure > figcaption,
+#contact-form > input:last-of-type {
     color: #ffffff;
     background-color: #629c44;
 }
 
-.header-img-container>img,
-.skills-logo-container>img,
-.politecnic-logo>img {
+.header-img-container > img,
+.skills-logo-container > img,
+.politecnic-logo > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -135,18 +139,21 @@ header>figure>figcaption {
     font-family: "Lobster";
     height: 250px;
     font-size: 25px;
-     color: #ffffff;
-    background-color: #a68400;
+     color: green;
+    background-color: #ffffff;
+     border: 3px solid green;
 }
 
 .modal-header {
-    border-bottom: 1px solid #a68400;
+    border-bottom: 1px solid green;
 }
 
-.modal-body p {
+.modal-body {
     display: flex;
     justify-content: space-around;
-    color: #ebebeb;
+    flex-direction:column;
+    align-items:center;
+    color: green;
 }
 
 .modal-footer {
@@ -156,5 +163,15 @@ header>figure>figcaption {
 }
 
 .btn-secondary{
-    background-color: grey;
+    background-color: green;
+    color: #ffffff;
+}
+
+.non-valid {
+    color: red;
+    border-color: red;
+}
+
+.btn-non-valid{
+    background-color: red;
 }
